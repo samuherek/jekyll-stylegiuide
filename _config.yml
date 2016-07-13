@@ -1,0 +1,101 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+
+# Site settings
+title: Growth Casts
+description: "Growth Casts description"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://www.grwothcasts.com
+
+
+
+# Site Owner
+owner:
+  name: "Grwoth Casts"
+  email: "info@growthcasts.co"
+  google:
+    analytics:
+    verify:
+  big:
+    verify:
+  alexa:
+    verify:
+  yandex:
+    verify:
+  bio:
+  avatar:
+
+
+
+# Jekyll config
+markdown: kramdown
+include:
+  # - .htaccess
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Guardfile
+  - s3_website.yml
+
+
+# Local server config
+host: 0.0.0.0
+
+
+
+# Collectsions
+# collections:
+#   projects:
+#     output: true
+#     permalink: /:collection/:path/
+
+
+
+# Defaults
+
+defaults:
+
+  # Pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: default
+
+
+
+# Jakyll assets
+assets:
+  # debug: false
+  # css_compressor: sass
+  sources:
+    - _assets
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
+
+
+# Gems
+gems:
+  - jekyll-sitemap
+
+
+
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
