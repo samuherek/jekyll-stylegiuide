@@ -2,16 +2,10 @@
 
 // Import partials from stylesheet directory
 
-// 0. Bootstrap integration
-@import
-  'bootstrap/bootstrap';
-
 // 1. Configuration and helpers
 @import
-  'utils/variables',
-  'utils/extends',
-  'utils/functions',
-  'utils/mixins';
+  'utils/global',
+  'utils/functions';
 
 // 2. Vendors
 @import
@@ -31,5 +25,4 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/social-links',
   'components/modals';

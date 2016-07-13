@@ -5,12 +5,11 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-    {% include shared/head.html %}
-    <body>
-        {% include shared/nav.html %}
-        <main>
-            {{ content }}
-        </main>
-        {% include shared/footer.html %}
-    </body>
+  {% include shared/head.html %}
+  <body>
+    <main class="site-main" role="main">
+      {{ content }}
+    </main>
+    {% include shared/aside.html %}
+  </body>
 </html>
