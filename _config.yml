@@ -7,17 +7,17 @@
 
 
 # Site settings
-title: Growth Casts
-description: "Growth Casts description"
+title: Site Title
+description: "Site description goes right here"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: http://www.grwothcasts.com
+url: http://www.siteurl.com
 
 
 
 # Site Owner
 owner:
-  name: "Grwoth Casts"
-  email: "info@growthcasts.co"
+  name: "Owner Name"
+  email: "owner@email.com"
   google:
     analytics:
     verify:
@@ -49,11 +49,10 @@ host: 0.0.0.0
 
 
 
-# Collectsions
-# collections:
-#   projects:
-#     output: true
-#     permalink: /:collection/:path/
+Collectsions
+collections:
+  components:
+    output: false
 
 
 
