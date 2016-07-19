@@ -8,4 +8,13 @@
 
 @include exports("typography") {
 
+
+    %a {
+        text-decoration: none;
+    }
+
+    a {
+        @extend %a;
+    }
+
 }

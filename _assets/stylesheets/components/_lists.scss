@@ -1,0 +1,26 @@
+// Variables
+//------------------------------------------------------
+
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("lists") {
+
+    %site-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .site-list--horizontal {
+        @extend %site-list;
+    }
+
+    .site-list--vertical {
+        @extend %site-list;
+
+    }
+
+}

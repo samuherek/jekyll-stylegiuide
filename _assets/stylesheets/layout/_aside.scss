@@ -1,0 +1,53 @@
+// Variables
+//------------------------------------------------------
+$sidebar-backround:                 $dark-blue;
+$sidebar-text-color:                $white;
+
+$nav-link-color:                    $white;
+
+
+// Exports
+//------------------------------------------------------
+
+@include exports("aside") {
+
+    .main-nav-toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #bbb;
+
+        @media only screen and (min-width: 40rem) {
+            display: none;
+        }
+    }
+
+    .site-navigation {
+        position: fixed;
+        transform: translateX(-100%);
+        background: $sidebar-backround;
+        color: $sidebar-text-color;
+        width: 15rem;
+        top: 0;
+        bottom: 0;
+        padding: 1.5rem;
+        transition: all 0.125s;
+
+        @media only screen and (min-width: 40rem) {
+            transform: translateX(0);
+        }
+
+        .navigation {
+
+            a {
+                color: $nav-link-color;
+            }
+        }
+    }
+
+    .site-brand > h1 {
+        font-size: 1.25rem;
+    }
+
+}

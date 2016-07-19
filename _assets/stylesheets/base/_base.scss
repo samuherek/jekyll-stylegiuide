@@ -8,4 +8,8 @@
 
 @include exports("base") {
 
+    * {
+        box-sizing: border-box;
+    }
+
 }

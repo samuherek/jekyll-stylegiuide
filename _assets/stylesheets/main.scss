@@ -19,10 +19,13 @@
 
 // 4. Layout-related sections
 @import
+  'layout/main',
   'layout/header',
+  'layout/aside',
   'layout/footer';
 
 // 5. Components
 @import
   'components/buttons',
+  'components/lists',
   'components/modals';
